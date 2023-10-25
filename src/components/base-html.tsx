@@ -13,8 +13,7 @@ export const BaseHtml = ({ children }: PropsWithChildren) => `
   <meta content="#1f2937" media="(prefers-color-scheme: dark)" name="theme-color" />
   <title>Yikes</title>
   <link rel="stylesheet" href="/tailwind.css">
-  <script src="https://unpkg.com/htmx.org@1.9.3"></script>
-  <script src="https://unpkg.com/hyperscript.org@0.9.9"></script>
+  <script src="https://unpkg.com/htmx.org@1.9.6"></script>
   <script src="https://unpkg.com/htmx.org/dist/ext/preload.js"></script>
   <script>
     htmx.config.globalViewTransitions = true;

@@ -6,7 +6,7 @@
     "dev": "bun run --watch src/index.tsx",
     "tw": "bunx tailwindcss -i ./src/tailwind.css -o ./tailwind-gen/tailwind.css",
     "tw:dev": "bunx tailwindcss -i ./src/tailwind.css -o ./tailwind-gen/tailwind.css --watch",
-    "start": "bun tw && bun run src/index.tsx"
+    "start": "bun tw && bun ./src/index.tsx"
   },
   "devDependencies": {
     "@kitajs/html": "^3.0.4",
