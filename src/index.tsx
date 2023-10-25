@@ -3,6 +3,7 @@ import { html } from '@elysiajs/html'
 import Elysia from 'elysia'
 import { YikesPage } from './components/yikes-page.tsx'
 import { BaseHtml } from './components/base-html.tsx'
+import { config } from './config.ts'
 
 const app = new Elysia()
     .use(html())
@@ -37,10 +38,6 @@ const app = new Elysia()
         </BaseHtml>
     ))
     .get('/tailwind.css', () => Bun.file('./tailwind-gen/tailwind.css'))
-    .listen(3000)
+    .listen(config.PORT)
 
-console.log(
-    `Elysia is running at ${
-        app.server?.development ? 'http://' : 'https://'
-    }${app.server?.hostname}:${app.server?.port}`
-)
+console.log(`Elysia is running at ${app.server?.hostname}:${app.server?.port}`)
