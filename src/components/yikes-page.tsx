@@ -27,6 +27,7 @@ export const YikesPage = ({
         <body
             class="flex w-full h-screen justify-center items-center flex-col bg-slate-50 dark:bg-slate-800"
             hx-boost="true"
+            hx-ext="preload"
         >
             <h1 class="text-3xl text-slate-800 dark:text-slate-50">
                 {pageTitle}
@@ -39,17 +40,23 @@ export const YikesPage = ({
                 <a
                     href="/oof"
                     class="mr-10 text-blue-500 hover:underline text-xl"
+                    preload="mouseover"
                 >
-                    Go to Foo
+                    Go to Oof
                 </a>
                 <a
                     href="/boof"
                     class="mr-10 text-blue-500 hover:underline text-xl"
+                    preload="mouseover"
                 >
-                    Go to Bar
+                    Go to Boof
                 </a>
-                <a href="/bork" class="text-blue-500 hover:underline text-xl">
-                    Go to Baz
+                <a
+                    href="/bork"
+                    class="text-blue-500 hover:underline text-xl"
+                    preload="mouseover"
+                >
+                    Go to Bork
                 </a>
             </div>
         </body>

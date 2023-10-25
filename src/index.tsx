@@ -8,14 +8,14 @@ import { config } from './config.ts'
 const app = new Elysia()
     .use(html())
     .get('/', ({ set }) => {
-        set.redirect = '/oof'
+        set.redirect = '/bork'
     })
     .get('/oof', () => (
         <BaseHtml>
             <YikesPage
                 pageTitle="This is the Oof Page"
                 imageColor="bg-red-500"
-                imagePosition="center"
+                imagePosition="left"
             />
         </BaseHtml>
     ))
@@ -24,7 +24,7 @@ const app = new Elysia()
             <YikesPage
                 pageTitle="This is the Boof Page"
                 imageColor="bg-green-500"
-                imagePosition="right"
+                imagePosition="center"
             />
         </BaseHtml>
     ))
@@ -33,7 +33,7 @@ const app = new Elysia()
             <YikesPage
                 pageTitle="This is the Bork Page"
                 imageColor="bg-yellow-500"
-                imagePosition="left"
+                imagePosition="right"
             />
         </BaseHtml>
     ))
