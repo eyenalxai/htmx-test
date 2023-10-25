@@ -1,7 +1,5 @@
 import { PropsWithChildren } from '@kitajs/html'
-//   themeColor: [
-//     { media: '(prefers-color-scheme: light)', color: '0 0% 100%' },
-//     { media: '(prefers-color-scheme: dark)', color: '222.2 84% 4.9%' }
+
 export const BaseHtml = ({ children }: PropsWithChildren) => `
 <!DOCTYPE html> 
 <html lang="en">  
@@ -14,7 +12,6 @@ export const BaseHtml = ({ children }: PropsWithChildren) => `
   <title>Yikes</title>
   <link rel="stylesheet" href="/tailwind.css">
   <script src="https://unpkg.com/htmx.org@1.9.6"></script>
-  <script src="https://unpkg.com/htmx.org/dist/ext/preload.js"></script>
   <script>
     htmx.config.globalViewTransitions = true;
   </script>
